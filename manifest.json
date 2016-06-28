@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+
+  "name": "Tabre Mark",
+  "description": "This extension stores the site you are on tabre",
+  "version": "0.5",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_title": "Mark"
+  },
+  "background": {
+    "persistent": false,
+    "scripts": ["background.js"]
+  },
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "https://ajax.googleapis.com/",
+    "https://localhost:3000/"
+  ]
+}
